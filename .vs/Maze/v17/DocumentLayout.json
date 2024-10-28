@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|c:\\users\\zeltr\\projets\\unity\\maze\\assets\\scripts\\trap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|c:\\users\\zeltr\\projets\\unity\\maze\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|c:\\users\\zeltr\\projets\\unity\\maze\\assets\\scripts\\platmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|c:\\users\\zeltr\\projets\\unity\\maze\\assets\\scripts\\finish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|C:\\Users\\zeltr\\Projets\\Unity\\Maze\\assets\\scripts\\platmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,19 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Trap.cs",
-              "DocumentMoniker": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Trap.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Trap.cs",
-              "ToolTip": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Trap.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Trap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T13:47:53.397Z",
+              "WhenOpened": "2024-10-28T14:45:23.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Finish.cs",
+              "DocumentMoniker": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Finish.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Finish.cs",
+              "ToolTip": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\Finish.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Finish.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T14:19:28.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlatMovement.cs",
               "DocumentMoniker": "C:\\Users\\zeltr\\Projets\\Unity\\Maze\\Assets\\Scripts\\PlatMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlatMovement.cs",
