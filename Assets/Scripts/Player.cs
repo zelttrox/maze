@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public Rigidbody Ball;
-    public void RepulsePlayer() {
+    public void Repulse() {
 
         Debug.Log("Repulse");
         Ball.AddForce(-Ball.linearVelocity * Ball.mass * 5, ForceMode.Impulse);

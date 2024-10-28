@@ -1,25 +1,44 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Trap : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+public class Trap : MonoBehaviour {
+
+    public Player Player;
+
+    [SerializeField] private enum TrapType {
+        repulse, 
+        blade, 
+        launcher, 
+        fan, 
+        finish
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private TrapType Type;
+
+    private void OnTriggerEnter(Collider triggered) {
+        if (triggered.tag == "Player") {
+            TriggerTrap();
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player") {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    private void TriggerTrap() {
+
+        switch(Type) {
+
+            case TrapType.repulse:
+            Player.Repulse();
+            break;
+                
+            case TrapType.blade:
+            break;
+
+            case TrapType.launcher:
+            break;
+
+            case TrapType.fan:
+            break;
+
+            case TrapType.finish:
+            break;
         }
     }
 }
