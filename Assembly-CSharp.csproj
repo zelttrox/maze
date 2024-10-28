@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{203E294F-6A57-B963-05D6-83EB30201135}</ProjectGuid>
+    <ProjectGuid>{198AF6B6-ACD0-1022-2095-3837BF2CDCFC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlatMovement.cs" />
     <Compile Include="Assets\Scripts\Finish.cs" />
+    <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
   </ItemGroup>
   <ItemGroup>

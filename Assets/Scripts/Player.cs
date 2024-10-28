@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
     public void RepulsePlayer() {
 
         Debug.Log("Repulse");
-        Ball.AddForce(Ball.linearVelocity);
+        Ball.AddForce(-Ball.linearVelocity * Ball.mass * 5, ForceMode.Impulse);
     
     }
 }
