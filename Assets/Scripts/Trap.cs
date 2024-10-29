@@ -2,17 +2,15 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour {
 
-    public Player Player;
-
-    [SerializeField] private enum TrapType {
+    [SerializeField] private TrapType Type;
+    [SerializeField] private Rigidbody Player;
+    private enum TrapType {
         repulse, 
         blade, 
         launcher, 
         fan, 
         finish
     }
-
-    private TrapType Type;
 
     private void OnTriggerEnter(Collider triggered) {
         if (triggered.tag == "Player") {
@@ -25,10 +23,11 @@ public class Trap : MonoBehaviour {
         switch(Type) {
 
             case TrapType.repulse:
-            Player.Repulse();
+            Repulse(Player);
             break;
                 
             case TrapType.blade:
+            Slice(Player);
             break;
 
             case TrapType.launcher:
@@ -40,5 +39,13 @@ public class Trap : MonoBehaviour {
             case TrapType.finish:
             break;
         }
+    }
+
+    public void Repulse(Rigidbody Object) {
+        Object.AddForce(-Object.linearVelocity * Object.mass * 5, ForceMode.Impulse);
+    }
+
+    public void Slice(Rigidbody Object) {
+        Destroy(Object);
     }
 }
