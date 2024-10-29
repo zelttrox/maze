@@ -1,18 +1,22 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Trap : MonoBehaviour {
 
     [SerializeField] private TrapType Type;
     [SerializeField] private Rigidbody Player;
+
+    private float RepulseForce = 5f;
+    private float LaunchForce = 10f;
+
     private enum TrapType {
         repulse, 
         blade, 
         launcher, 
-        fan, 
         finish
     }
 
-    private void OnTriggerEnter(Collider triggered) {
+    public void OnTriggerEnter(Collider triggered) {
         if (triggered.tag == "Player") {
             TriggerTrap();
         }
@@ -31,21 +35,28 @@ public class Trap : MonoBehaviour {
             break;
 
             case TrapType.launcher:
-            break;
-
-            case TrapType.fan:
+            Launch(Player);
             break;
 
             case TrapType.finish:
+            Finish(Player);
             break;
         }
     }
 
     public void Repulse(Rigidbody Object) {
-        Object.AddForce(-Object.linearVelocity * Object.mass * 5, ForceMode.Impulse);
+        Object.AddForce(-Object.linearVelocity * Object.mass * RepulseForce, ForceMode.Impulse);
     }
 
     public void Slice(Rigidbody Object) {
         Destroy(Object);
+    }
+
+    public void Launch(Rigidbody Object) {
+        Object.AddForce(Vector3.up * (Object.mass * LaunchForce), ForceMode.Impulse);
+    }
+
+    public void Finish(Rigidbody Object) {
+        // Load next level
     }
 }
