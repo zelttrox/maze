@@ -13,6 +13,7 @@ public class Trap : MonoBehaviour {
         repulse, 
         blade, 
         launcher, 
+        button,
         finish
     }
 
@@ -38,6 +39,11 @@ public class Trap : MonoBehaviour {
             Launch(Player);
             break;
 
+            case TrapType.button:
+            PressButton(Player);
+            break;
+
+
             case TrapType.finish:
             Finish(Player);
             break;
@@ -58,5 +64,9 @@ public class Trap : MonoBehaviour {
 
     public void Finish(Rigidbody Object) {
         // Load next level
+    }
+
+    public void PressButton(Rigidbody Object) {
+        // Button press action
     }
 }
