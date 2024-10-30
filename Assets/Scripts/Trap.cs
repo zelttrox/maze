@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour {
 
+    public Game Game;
+
     [SerializeField] private TrapType Type;
     [SerializeField] private Rigidbody Player;
 
@@ -45,7 +47,7 @@ public class Trap : MonoBehaviour {
 
 
             case TrapType.finish:
-            Finish(Player);
+            Finish();
             break;
         }
     }
@@ -62,8 +64,8 @@ public class Trap : MonoBehaviour {
         Object.AddForce(Vector3.up * (Object.mass * LaunchForce), ForceMode.Impulse);
     }
 
-    public void Finish(Rigidbody Object) {
-        // Load next level
+    public void Finish() {
+        Game.LoadScene(Game.currentLevel++);
     }
 
     public void PressButton(Rigidbody Object) {
