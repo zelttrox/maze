@@ -21,8 +21,8 @@ public class Game : MonoBehaviour {
     public string currentScene;
 
     void Start() {
-        //currentLevel = 0;
-        //currentScene = Levels[currentLevel];
+        currentLevel = 0;
+        currentScene = Levels[currentLevel];
     }
     public void LoadScene(int level) {
             SceneManager.LoadScene(Levels[level]);

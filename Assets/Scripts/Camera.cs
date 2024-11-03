@@ -3,6 +3,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour {
 
     public GameObject Cam;
+    public PlatMovement Plat;
 
     private bool isSwitched = false;
 
@@ -22,6 +23,7 @@ public class Camera : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
             SwitchView();
+            Plat.InvertInput();
         }
     }
 
