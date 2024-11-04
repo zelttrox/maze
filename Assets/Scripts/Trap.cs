@@ -34,17 +34,12 @@ public class Trap : MonoBehaviour {
             break;
                 
             case TrapType.blade:
-            Slice(Player);
+            Slice();
             break;
 
             case TrapType.launcher:
             Launch(Player);
             break;
-
-            case TrapType.button:
-            PressButton(Player);
-            break;
-
 
             case TrapType.finish:
             Finish();
@@ -56,8 +51,8 @@ public class Trap : MonoBehaviour {
         Object.AddForce(-Object.linearVelocity * Object.mass * RepulseForce, ForceMode.Impulse);
     }
 
-    public void Slice(Rigidbody Object) {
-        Destroy(Object);
+    public void Slice() {
+        Game.LoadScene(Game.currentLevel);
     }
 
     public void Launch(Rigidbody Object) {
@@ -65,10 +60,7 @@ public class Trap : MonoBehaviour {
     }
 
     public void Finish() {
-        Game.LoadScene(Game.currentLevel++);
-    }
-
-    public void PressButton(Rigidbody Object) {
-        // Button press action
+        Game.currentLevel++;
+        Game.LoadScene(Game.currentLevel);
     }
 }
